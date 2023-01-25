@@ -6,6 +6,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Main {
 
 	public static void main(String[] args) {
+		openChrome();
+		
+		
+
+	}
+	public static void openChrome() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\chen\\Desktop\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
@@ -18,7 +24,7 @@ public class Main {
 			System.out.println("Test case - Failed");
 		}
 		driver.close();
-
+		
 	}
 
 }
